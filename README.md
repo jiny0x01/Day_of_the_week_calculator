@@ -13,7 +13,8 @@ and
 
 or 
 > docker build -t dcalc .
-docker run -it dcalc
+
+> docker run -it dcalc
 
 ## 원리
 
