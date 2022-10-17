@@ -3,6 +3,11 @@ Day of the week calculator
 https://www.youtube.com/watch?v=4LE8CP6QlBA
 
 연도와 월 일을 입력하여 요일을 알아낸다.
+
+# Run
+> go run main.go
+
+
 ## 원리
 
 ### 요일 계산
