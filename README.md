@@ -5,7 +5,9 @@ https://www.youtube.com/watch?v=4LE8CP6QlBA
 연도와 월 일을 입력하여 요일을 알아낸다.
 
 # Run
-> https://github.com/jiny0x01/Day_of_the_week_calculator.git
+> git clone https://github.com/jiny0x01/Day_of_the_week_calculator.git
+
+> cd Day_of_the_week_calculator
 
 and 
 
