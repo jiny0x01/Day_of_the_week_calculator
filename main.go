@@ -80,7 +80,7 @@ func calcDate(y, m, d int) int {
 }
 
 func main() {
-	fmt.Println("연월일을 yyyy mm dd 형태로 입력해주세요.")
+	fmt.Println("년월일을 yyyy mm dd 형태로 입력해주세요.")
 	var y, m, d int
 	_, err := fmt.Scanf("%d %d %d", &y, &m, &d)
 	if err != nil {
