@@ -20,8 +20,8 @@ func validateDate(y, m, d int) error {
 
 func calcYear(y int) int {
 	y -= 1
-	y = y % 400      // 윤년 제외
-	result := (y / 100) * 5// 100년 단위로 나눈값 저장
+	y = y % 400             // 윤년 제외
+	result := (y / 100) * 5 // 100년 단위로 나눈값 저장
 	y = y % 100
 	result += y + y/4
 	return result % 7
@@ -30,41 +30,13 @@ func calcYear(y int) int {
 func calcMonth(m int) int {
 	m -= 1
 	result := 0
-	if m >= 1 {
-		result += 31
-	}
-	if m >= 2 {
-		result += 28
-	}
-	if m >= 3 {
-		result += 31
-	}
-	if m >= 4 {
-		result += 30
-	}
-	if m >= 5 {
-		result += 31
-	}
-	if m >= 6 {
-		result += 30
-	}
-	if m >= 7 {
-		result += 31
-	}
-	if m >= 8 {
-		result += 31
-	}
-	if m >= 9 {
-		result += 30
-	}
-	if m >= 10 {
-		result += 31
-	}
-	if m >= 11 {
-		result += 30
-	}
-	if m >= 12 {
-		result += 31
+	months := []int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+	for i := 0; i < 12; i++ {
+		if m >= i+1 {
+			result += months[i]
+		} else {
+			break
+		}
 	}
 	return result % 7
 }
