@@ -65,5 +65,4 @@ func main() {
 
 	dayOfTheWeek := [7]string{"일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"}
 	fmt.Printf("%d년 %d월 %d일은 %s입니다.\n", y, m, d, dayOfTheWeek[calcDate(y, m, d)])
-	return
 }
